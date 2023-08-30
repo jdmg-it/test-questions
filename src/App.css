@@ -1,0 +1,9 @@
+#root {
+	margin-inline: auto;
+	width: min(100% - 3rem, 800px);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 1rem;
+}

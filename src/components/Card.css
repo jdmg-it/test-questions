@@ -1,0 +1,99 @@
+.card {
+	--font-color: #fefefe;
+	--font-color-sub: #7e7e7e;
+	--bg-color: #2b2b2b;
+	--main-color: #fefefe;
+	--main-focus: #d6a2e8;
+
+	--right-answer: #78e08f;
+	--wrong-answer: #d63031;
+
+	position: relative;
+	width: 100%;
+	background: var(--bg-color);
+	border: 2px solid var(--main-color);
+	box-shadow: 4px 4px var(--main-color);
+	border-radius: 5px;
+	margin-inline: auto;
+	padding-inline: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-header h5 {
+	margin-top: 1rem;
+	color: var(--main-focus);
+}
+
+.card-title {
+	color: var(--font-color);
+}
+
+.card-code {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border: 0.5px dotted var(--main-color);
+}
+
+.card-divider {
+	width: 100%;
+	border: 1px solid var(--main-color);
+	border-radius: 50px;
+}
+
+.card-answer {
+	margin: 1rem;
+	display: flex;
+	justify-content: center;
+	border: 2px solid var(--main-color);
+	box-shadow: 2px 2px var(--main-color);
+	border-radius: 5px;
+}
+
+.card-answer button {
+	width: 100%;
+	padding: 0.8rem;
+	border: none;
+	font-size: 1.1rem;
+	font-weight: 500;
+
+	transition: background-color 0.2s ease-in-out;
+}
+
+.card-footer-item {
+	margin: 0 0.7rem;
+	padding: 0.3rem 0.5rem;
+	border: 2px solid var(--main-color);
+	box-shadow: 2px 2px var(--main-color);
+	border-radius: 5px;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+
+	transition: background-color 0.2s ease-in-out;
+}
+
+.card-footer-item:not(:disabled):is(:hover, :focus),
+.card-answer button:not(:disabled):is(:hover, :focus) {
+	cursor: pointer;
+	background-color: #383838;
+}
+
+.card-footer {
+	display: flex;
+	flex-direction: row;
+	margin: 1rem auto;
+	align-items: center;
+}
+
+.transparent {
+	background-color: transparent;
+}
+
+.right-answer {
+	background-color: var(--right-answer);
+}
+
+.wrong-answer {
+	background-color: var(--wrong-answer);
+}

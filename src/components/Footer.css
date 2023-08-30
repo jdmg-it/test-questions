@@ -1,0 +1,23 @@
+.stats-footer {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.restart-button {
+	margin: 1.5rem 0.7rem;
+	font-size: large;
+	padding: 0.5rem 0.6rem;
+	border: 2px solid #fefefe;
+	box-shadow: 2px 2px #fefefe;
+	border-radius: 5px;
+	background-color: transparent;
+
+	transition: background-color 0.2s ease-in-out;
+}
+
+.restart-button:not(:disabled):is(:hover, :focus) {
+	cursor: pointer;
+	background-color: #383838;
+}
